@@ -1,5 +1,5 @@
-// Nama: Raffie Aditya Akbar
-// NIM : 24060124130054
+//Nama: Raffie Aditya Akbar
+//NIM : 24060124130054
 public class Lingkaran extends BangunDatar {
     private double jari;
 

@@ -1,5 +1,5 @@
-// Nama: Raffie Aditya Akbar
-// NIM : 24060124130054
+//Nama: Raffie Aditya Akbar
+//NIM : 24060124130054
 public class BangunDatar {
     protected int jmlsisi;
     protected String warna;
