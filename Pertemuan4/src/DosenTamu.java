@@ -44,17 +44,17 @@ class DosenTamu extends Dosen {
 
     @Override
     public double hitungTunjangan() {
-        return 0.025 * gajiPokok;
+        return 0.025 * getGajiPokok();
     }
 
     @Override
     public void printInfo() {
-        System.out.println("NIP : " + nip);
-        System.out.println("NIDK : " + nidk);
-        System.out.println("Nama : " + nama);
+        System.out.println("NIP : " + getNip());
+        System.out.println("NIDK : " + this.nidk);
+        System.out.println("Nama : " + getNama());
         System.out.println("Jabatan : Dosen Tamu");
-        System.out.println("Fakultas : " + fakultas);
-        System.out.println("Gaji Pokok : Rp" + gajiPokok);
+        System.out.println("Fakultas : " + getFakultas());
+        System.out.println("Gaji Pokok : Rp" + getGajiPokok());
         System.out.println("Tunjangan : Rp" + hitungTunjangan());
         System.out.println("Akhir Kontrak : " + formatTanggal(tanggalAkhirKontrak));
     }

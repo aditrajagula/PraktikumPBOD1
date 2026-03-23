@@ -4,7 +4,7 @@ import java.time.LocalDate;
 
 class Dosen extends Pegawai {
     //Atribut
-    protected String fakultas;
+    private String fakultas;
 
     //Method
 

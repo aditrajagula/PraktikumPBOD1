@@ -7,9 +7,11 @@ import java.util.Locale;
 
 class Pegawai {
     //Atribut
-    protected String nip, nama;
-    protected LocalDate tanggalLahir, tmt;
-    protected double gajiPokok;
+    private String nip; 
+    private String nama;
+    private LocalDate tanggalLahir;
+    private LocalDate tmt;
+    private double gajiPokok;
 
     //Method
 

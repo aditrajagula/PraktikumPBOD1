@@ -40,21 +40,21 @@ class DosenTetap extends Dosen {
 
     @Override
     public double hitungTunjangan() {
-        return 0.02 * hitungMasaKerjaTahun() * gajiPokok;
+        return 0.02 * hitungMasaKerjaTahun() * getGajiPokok();
     }
 
     @Override
     public void printInfo() {
-        System.out.println("NIP : " + nip);
-        System.out.println("NIDN : " + nidn);
-        System.out.println("Nama : " + nama);
-        System.out.println("Tanggal Lahir : " + formatTanggal(tanggalLahir));
-        System.out.println("TMT : " + formatTanggal(tmt));
+        System.out.println("NIP : " + getNip());
+        System.out.println("NIDN : " + this.nidn);
+        System.out.println("Nama : " + getNama());
+        System.out.println("Tanggal Lahir : " + formatTanggal(getTanggalLahir()));
+        System.out.println("TMT : " + formatTanggal(getTmt()));
         System.out.println("Jabatan : Dosen Tetap");
-        System.out.println("Fakultas : " + fakultas);
+        System.out.println("Fakultas : " + getFakultas());
         System.out.println("Masa Kerja : " + formatMasaKerja());
         System.out.println("Tanggal Pensiun : " + formatTanggal(hitungTanggalPensiun(BUP)));
-        System.out.println("Gaji Pokok : Rp" + gajiPokok);
+        System.out.println("Gaji Pokok : Rp" + getGajiPokok());
         System.out.println("Tunjangan : Rp" + hitungTunjangan());
     }
 }

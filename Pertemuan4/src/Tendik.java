@@ -32,18 +32,18 @@ class Tendik extends Pegawai {
 
     @Override
     public double hitungTunjangan() {
-        return 0.01 * hitungMasaKerjaTahun() * gajiPokok;
+        return 0.01 * hitungMasaKerjaTahun() * getGajiPokok();
     }
 
     @Override
     public void printInfo() {
-        System.out.println("NIP : " + nip);
-        System.out.println("Nama : " + nama);
+        System.out.println("NIP : " + getNip());
+        System.out.println("Nama : " + getNama());
         System.out.println("Jabatan : Tendik");
-        System.out.println("Bidang : " + bidang);
+        System.out.println("Bidang : " + this.bidang);
         System.out.println("Masa Kerja : " + formatMasaKerja());
         System.out.println("Tanggal Pensiun : " + formatTanggal(hitungTanggalPensiun(BUP)));
-        System.out.println("Gaji Pokok : " + gajiPokok);
+        System.out.println("Gaji Pokok : " + getGajiPokok());
         System.out.println("Tunjangan : Rp" + hitungTunjangan());
     }
 }
