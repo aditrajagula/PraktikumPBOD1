@@ -1,3 +1,5 @@
+//Nama: Raffie Aditya Akbar
+//NIM : 24060124130054
 public class Asersi1 {
     public static void main(String[] args) {
         int x = 0;

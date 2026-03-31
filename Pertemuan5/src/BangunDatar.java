@@ -1,66 +1,76 @@
 //Nama: Raffie Aditya Akbar
 //NIM : 24060124130054
 public abstract class BangunDatar {
-    protected int jmlsisi;
-    protected String warna;
-    protected String border;
-    protected static int counterBangunDatar = 0;
+    //Atribut
+    private int jmlsisi;
+    private String warna;
+    private String border;
+    private static int counterbangundatar = 0;
 
+    //Method
 
-    public BangunDatar () {
-        counterBangunDatar++;
+    //Konstruktor
+    public BangunDatar() {
+        counterbangundatar++;
     }
 
-    public BangunDatar (int Jmlsisi, String warna, String border) {
-        this.jmlsisi = Jmlsisi;
-        this.warna = warna;
-        this.border = border;
-        counterBangunDatar++;
+    public BangunDatar(int sisi, String Warna, String Border) {
+        this.jmlsisi = sisi;
+        this.warna = Warna;
+        this.border = Border;
+        counterbangundatar++;
     }
 
-    public int getJmlSisi () {
-        return jmlsisi;
+    //Selektor
+    public int getJmlSisi() {
+        return this.jmlsisi;
     }
 
-    public void setJmlSisi (int jmlSisi) {
-        this.jmlsisi = jmlSisi;
-    }
-
-    public String getWarna () {
-        return warna;
-    }
-
-    public void setWarna (String warna) {
-        this.warna = warna;
+    public String getWarna() {
+        return this.warna;
     }
 
     public String getBorder() {
-        return border;
+        return this.border;
+    }
+    
+    //Mutator
+    public void setJmlSisi(int sisi) {
+        this.jmlsisi = sisi;
+    }
+
+    public void setWarna(String Warna) {
+        this.warna = Warna;
     }
 
     public void setBorder(String Border) {
         this.border = Border;
     }
 
+    public static int getCounterBangunDatar() {
+        return counterbangundatar;
+    }
+
     public void printInfo() {
-        System.out.println("Jumlah sisi: " + jmlsisi);
-        System.out.println("Warna: " + warna);
-        System.out.println("Border: " + border);
+        System.out.println("Jumlah sisi: " + this.jmlsisi);
+        System.out.println("Warna: " + this.warna);
+        System.out.println("Border: " + this.border);
     }
 
     public static void printCounterBangunDatar() {
-        System.out.println("Jumlah objek bangun datar: " + counterBangunDatar);
+        System.out.println("Jumlah objek: " + counterbangundatar);
     }
 
     public abstract double getLuas();
 
     public abstract double getKeliling();
 
-    public boolean isEqualLuas(BangunDatar X){
+    public boolean isEqualKeliling(BangunDatar X) {
+        return this.getKeliling() == X.getKeliling();
+    }
+
+    public boolean isEqualLuas(BangunDatar X) {
         return this.getLuas() == X.getLuas();
     }
 
-    public boolean isEqualKeliling(BangunDatar X){
-        return this.getKeliling() == X.getKeliling();
-    }
 }

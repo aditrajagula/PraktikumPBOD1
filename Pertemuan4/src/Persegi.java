@@ -8,9 +8,7 @@ public class Persegi extends BangunDatar {
     }
 
     public Persegi(double sisi, String warna, String border) {
-        this.jmlsisi = 4;
-        this.warna = warna;
-        this.border = border;
+        super(4, warna, border);
         this.sisi = sisi;
     }
 

@@ -1,3 +1,5 @@
+//Nama: Raffie Aditya Akbar
+//NIM : 24060124130054
 import java.time.LocalDate;
 
 public class MManusia {

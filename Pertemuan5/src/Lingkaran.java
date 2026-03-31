@@ -61,6 +61,7 @@ public class Lingkaran extends BangunDatar implements IResize {
         jari = jari * 0.9;
     }
 
+    @Override
     public void zoom(int percent) {
         jari = jari * percent / 100;
     }

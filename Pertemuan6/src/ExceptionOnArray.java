@@ -1,3 +1,5 @@
+//Nama: Raffie Aditya Akbar
+//NIM : 24060124130054
 public class ExceptionOnArray {
     public static void main(String[] args) {
         Integer[] arrayInteger = new Integer[4];

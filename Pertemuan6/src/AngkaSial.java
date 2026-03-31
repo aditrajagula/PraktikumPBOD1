@@ -1,3 +1,5 @@
+//Nama: Raffie Aditya Akbar
+//NIM : 24060124130054
 public class AngkaSial {
     public void cobaAngka(int angka) throws AngkaSialException {
         if (angka == 13) {

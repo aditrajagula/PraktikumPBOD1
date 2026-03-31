@@ -1,4 +1,5 @@
-
+//Nama: Raffie Aditya Akbar
+//NIM : 24060124130054
 class Lingkaran {
     private double jariJari;
 
