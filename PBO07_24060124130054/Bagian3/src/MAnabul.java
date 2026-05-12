@@ -4,7 +4,7 @@
 
 public class MAnabul {
     public static void main(String[] args) {
-        Anabul[] kebunBinatang = {
+        Teman[] kebunBinatang = {
             new Kucing("Kitty"),
             new Anjing("Rex"),
             new Burung("Tweety"),
@@ -13,7 +13,7 @@ public class MAnabul {
         };
  
         System.out.println("====== Simulasi Bunyi dan Gerakan Anabul ======\n");
-        for (Anabul a : kebunBinatang) {
+        for (Teman a : kebunBinatang) {
             a.bersuara();   
             a.gerak();
             System.out.println();

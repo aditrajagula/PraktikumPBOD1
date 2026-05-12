@@ -2,10 +2,10 @@
 //NIM   : 24060124130054
 //Tanggal: 27 April 2025
 
-public class Anjing extends Teman {
+public class Anjing extends Anabul {
 
-    public Anjing(String nama) {
-        super(nama);
+    public Anjing(String nama, double bobot) {
+        super(nama, bobot);
     }
  
     @Override
