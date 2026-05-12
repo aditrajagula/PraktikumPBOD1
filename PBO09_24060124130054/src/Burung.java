@@ -2,10 +2,10 @@
 //NIM   : 24060124130054
 //Tanggal: 27 April 2025
 
-public class Burung extends Teman {
+public class Burung extends Anabul {
 
-    public Burung(String nama) {
-        super(nama);
+    public Burung(String nama, double bobot) {
+        super(nama, bobot);
     }
  
     @Override
