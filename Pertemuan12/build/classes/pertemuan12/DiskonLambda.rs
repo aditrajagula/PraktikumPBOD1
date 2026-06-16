@@ -1,0 +1,3 @@
+pertemuan12.DiskonLambda$1
+pertemuan12.IDiskon
+pertemuan12.DiskonLambda
